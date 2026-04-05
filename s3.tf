@@ -22,6 +22,12 @@ versioning_configuration {
 status = "Enabled"
 }
 }
-
+terraform {
+backend "s3" {
+region = "us-east-1"
+bucket = "deepthi.moonobucket"
+key = "prod/terraform.tfstate"
+}
+}
 
 
